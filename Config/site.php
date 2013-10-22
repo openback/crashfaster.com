@@ -16,9 +16,9 @@ Configure::write('Monobomb',
  * Defines the specifics of this site
  */
 define('DEFAULT_ARTIST', 'crashfaster');
-define('SITE_TITLE', 'Crashfaster');
-define('NEWS_LOGO', 'crashfaster_logo_64x11.png');
-define('NEWS_LOGO_WIDTH', 64);
+define('SITE_TITLE', 'crashfaster');
+define('NEWS_LOGO', 'crashfaster_logo_small.png');
+define('NEWS_LOGO_WIDTH', 14);
 define('FOOTER_IMAGE', 'crashfaster_logo_footer.png');
 
 Configure::write('Menu',

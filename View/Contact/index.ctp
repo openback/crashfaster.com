@@ -11,8 +11,9 @@
 	<h1>Or&hellip;</h1>
 	<ul>
 		<?php foreach ($artists as $artist) { ?>
-		<li><a href="<?php echo $artist['Artist']['email']; ?>"><span class="name"><?php echo $artist['Artist']['name']; ?></span><span class="address"><?php echo $artist['Artist']['email']; ?></span></a></li>
+		<li><a href="mailto:<?php echo $artist['Artist']['email']; ?>"><span class="name"><?php echo $artist['Artist']['name']; ?></span><span class="address"><?php echo $artist['Artist']['email']; ?></span></a></li>
 		<?php } ?>
+		<li><a href="/presskit/epk.zip">Electronic Press Kit</a></li>
 	</ul>
 	<?php if (AuthComponent::user('id') !== null): ?><div class="admin"><a href="<?php echo Router::url(array('controller' => 'artists')); ?>">MANAGE</a></div><?php endif; ?>
 </nav>
